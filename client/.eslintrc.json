@@ -1,0 +1,37 @@
+{
+  "extends": ["next", "prettier"],
+  "plugins": ["prettier", "import-helpers"],
+  "rules": {
+    "prettier/prettier": "error",
+    "space-before-function-paren": "off",
+    "react/prop-types": "off",
+    "import/no-anonymous-default-export": "off",
+    "react/display-name": "off",
+    "import-helpers/order-imports": [
+      "warn", // exibe um alerta no editor
+      {
+        "newlinesBetween": "always", // insere uma linha em branco após cada grupo de prioridade
+        "groups": [
+          "/^react/", // primeiro grupo: tudo que inicia com 'react'
+          "/^next/",
+          "/stitches/",
+          "module",
+          "/^@infra/",
+          "/^@services/",
+          "/^@validations/",
+          "/^@masks/",
+          "/^@utils/",
+          "/^@components/",
+          "/^@contexts/",
+          "/^@styles/",
+          "/^@static/",
+          "/^@assets/",
+          ["parent", "sibling", "index"], // sétimo grupo: qualquer arquivo pai, irmão ou filho do arquivo atual
+          "/^@layouts/",
+          ["/^@apollo/client/", "/^@libs/"]
+        ],
+        "alphabetize": { "order": "asc", "ignoreCase": true } // configura as importações por ordem alfabética (crescente), ignorando maiúsculas e minúsculas
+      }
+    ]
+  }
+}

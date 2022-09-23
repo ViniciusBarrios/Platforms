@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@static/*": ["public/*"],
+      "@components/*": ["src/components/*"],
+      "@contexts/*": ["src/contexts/*"],
+      "@infra/*": ["src/infra/*"],
+      "@layouts/*": ["src/layouts/*"],
+      "@libs/*": ["src/libs/*"],
+      "@masks/*": ["src/models/masks/*"],
+      "@validations/*": ["src/models/validations/*"],
+      "@services/*": ["src/services/*"],
+      "@utils/*": ["src/utils/*"],
+      "stitches": ["stitches.config.ts"],
+      "@styles/*": ["styles/*"],
+    }
+  }
+}

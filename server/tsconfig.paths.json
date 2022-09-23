@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@database/*": ["src/database/*"],
+      "@helpers/*": ["src/helpers/*"],
+      "@providers/*": ["src/providers/*"],
+      "@resolvers/*": ["src/resolvers/*"],
+      "@resolvers-types/*": ["src/resolvers/types/*"],
+      "@services/*": ["src/services/*"],
+      "@utils/*": ["src/utils/*"]
+    }
+  }
+}
